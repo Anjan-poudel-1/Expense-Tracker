@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import {ExpenseProvider,useExpense} from './Contextwrap/Context'
 ReactDOM.render(
-  <React.StrictMode>
+
+    <ExpenseProvider>
     <App />
-  </React.StrictMode>,
+      </ExpenseProvider>
+ ,
   document.getElementById('root')
 );
 
